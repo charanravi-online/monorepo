@@ -1,0 +1,18 @@
+{
+  "name": "db",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "prisma": "^8.0.0-rc.20"
+  },
+  "scripts": {
+    "postinstall": "prisma skills sync || exit 0"
+  }
+}
